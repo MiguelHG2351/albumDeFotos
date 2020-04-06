@@ -2,13 +2,13 @@
     "uno":{
         "holaMundo": 15
     },
-    "hola": 
+    "hola": { 
         "holaMundo": 14
     },
-    "mundo": 
+    "mundo":{ 
         "holaMundo": 12
     },
-    "xd": 
+    "xd": { 
         "holaMundo": 11
     }
 }

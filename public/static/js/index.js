@@ -52,7 +52,7 @@
     })
 
     async function hello() {
-      const api = await fetch('./static/index.json')
+      const api = await fetch('https://github.com/MiguelHG2351/albumDeFotos/blob/master/public/static/js/index.json')
       console.log(api)
       const response = api.json()
     }
