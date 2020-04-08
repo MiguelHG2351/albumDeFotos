@@ -13,7 +13,7 @@
         return `
         <div class="col s12 m6 l4 xl3 card">
               <div class="card-image materialboxed" style="overflow:scroll; height:286px !important;">
-                <img class=""materialboxed" alt="foto de la tarjeta" src="static/images/${url}.png"">
+                <img class="lazy materialboxed" data-src="static/images/${url}.png" data-srcset="static/images/${url}.png 2x, static/images/${url}.png  1x" alt="foto de la tarjeta" src="">
               </div>
               <div class="card-content">
                 <div><p class="name-photo">Francisca Vallecillo</p></div>
@@ -50,23 +50,34 @@
           const html = document.implementation.createHTMLDocument();
           html.body.innerHTML = HTMLString;
           cards_others.append(html.body.children[0])
-          //   console.log(name[url])
         }
-        
-        // setTimeout(() => {
-          //     for (let i = 1; i <= 27 ; i++) {
-            //         console.log(i)
-            //         if(i <=5) {
-              //             alert()
-              //         }
-              //     }
-              // },4000)
             M.AutoInit()
 
        })
-       debugger
+       
        window.addEventListener('load', () => {
-        
+        var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
+        console.log(lazyImages)
+        if ("IntersectionObserver" in window) {
+          let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                let lazyImage = entry.target;
+                lazyImage.src = lazyImage.dataset.src;
+                lazyImage.srcset = lazyImage.dataset.srcset;
+                lazyImage.classList.remove("lazy");
+                lazyImageObserver.unobserve(lazyImage);
+              }
+            });
+          });
+      
+          lazyImages.forEach(function(lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+          });
+        } else {
+          // Possibly fall back to a more compatible method here
+        }
+      
        })
 
 
