@@ -62,11 +62,13 @@
           let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
             entries.forEach(function(entry) {
               if (entry.isIntersecting) {
+                console.log(entries.length)
                 let lazyImage = entry.target;
                 lazyImage.src = lazyImage.dataset.src;
                 lazyImage.srcset = lazyImage.dataset.srcset;
                 lazyImage.classList.remove("lazy");
                 lazyImageObserver.unobserve(lazyImage);
+                ele[1].textContent = ele[1].textContent.slice(0, 7)
               }
             });
           });
