@@ -59,7 +59,6 @@ body {
         padding: 2em;
         min-height: 768px;
     }
-    }
     
     .menu-search {
         display: flex;
@@ -190,6 +189,10 @@ body {
         font-size: 12px;
     }
 
+    .header-wraper {
+        background-size: auto auto;
+    }
+
     .user-img {
         width: 25px;
         height: 25px;
@@ -209,6 +212,7 @@ body {
         /* border-bottom:1px solid #E6EAEA; */
         border-bottom: .2px solid rgba(0, 0, 0, 0.21);
     }
+
     
     .menu-search {
         display: flex;
