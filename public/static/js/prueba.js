@@ -1,20 +1,21 @@
 
+async function renderImage() {
+        
     // import video from './youtube-video'
 
       // Variables
 
       const cards = document.getElementById('card-container')
       const cards_others = document.getElementById('card-container-others')
-      const ele = document.getElementsByClassName('user-name')
       const videoContainer = document.getElementById('video')
       const form_video = document.getElementById('form-video')
       const category = document.getElementsByClassName('categoryImages')
       // const BASE_URL = `static/images/${i}`
 
-      function renderTemplate(url) {
+      async function renderTemplate(url) {
         return `
         <div class="col s12 m6 l4 xl3 card">
-              <div class="card-image materialboxed">
+              <div class="card-image materialboxed" style="overflow:scroll; height:286px !important;">
                 <img class="lazy materialboxed" data-src="static/images/${url}.png" data-srcset="static/images/${url}.png 2x, static/images/${url}.png  1x" alt="foto de la tarjeta" src="">
               </div>
               <div class="card-content">
@@ -23,7 +24,7 @@
               </div>
               <div class="card-action">
                 <div class="user-card">
-                  <img loading="lazy" class="user-img" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c38.0.160.160a/p160x160/86699303_832721240486433_5068736281786187776_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=wwMxlVUmKrIAX_Y4eCt&_nc_ht=scontent.fmga3-2.fna&oh=d753d59c0bc1bc3b3453e349edd14edf&oe=5EAD5ADD"
+                  <img class="user-img" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c38.0.160.160a/p160x160/86699303_832721240486433_5068736281786187776_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=wwMxlVUmKrIAX_Y4eCt&_nc_ht=scontent.fmga3-2.fna&oh=d753d59c0bc1bc3b3453e349edd14edf&oe=5EAD5ADD"
                    alt="Foto del usuario">
                    <p class="user-name">Walter Solorzano</p>
                 </div>
@@ -36,35 +37,31 @@
           </div>
         `
       }
-
-      document.addEventListener('DOMContentLoaded', () => {
+      
+      M.AutoInit()
         
-        for(var url=1; url<=86; url++) {
+        for(var url=1; url<=30; url++) {
           const HTMLString = renderTemplate(url)
           const html = document.implementation.createHTMLDocument();
           html.body.innerHTML = HTMLString;
           cards.append(html.body.children[0])
-          if (url > 30) {
-            const HTMLString = renderTemplate(url)
-            const html = document.implementation.createHTMLDocument();
-            html.body.innerHTML = HTMLString;
-            cards_others.append(html.body.children[0])
-          }
+          //   console.log(name[url])
         }
 
-        // for(var url=31; url<=86; url++) {
-        // }
-            M.AutoInit()
+        for(var url=31; url<=86; url++) {
+          const HTMLString = renderTemplate(url)
+          const html = document.implementation.createHTMLDocument();
+          html.body.innerHTML = HTMLString;
+          cards_others.append(html.body.children[0])
+        }
 
-       })
-       
-       window.addEventListener('load', () => {
-        var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
-        // console.log(lazyImages)
-        if ("IntersectionObserver" in window) {
-          let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+
+      const ele = document.getElementsByClassName('user-name');
+
+      async function callback(entries, observer) {
             entries.forEach(function(entry, index, array) {
               if (entry.isIntersecting) {
+                console.log(entries)
                 let lazyImage = entry.target;
                 lazyImage.src = lazyImage.dataset.src;
                 lazyImage.srcset = lazyImage.dataset.srcset;
@@ -72,18 +69,20 @@
                 lazyImageObserver.unobserve(lazyImage);
                 ele[1].textContent = ele[1].textContent.slice(0, 7)
               }
-            });
-          });
-      
-          lazyImages.forEach(function(lazyImage) {
-            lazyImageObserver.observe(lazyImage);
-          });
-        } else {
-          console.log('No es compatible intersection observer con esta navegador')
+            })
         }
-      
-       })
 
-      async function renderImage() {
+        var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
+        // console.log(lazyImages)
+        if ("IntersectionObserver" in window) {
+          let lazyImageObserver = new IntersectionObserver(callback);
+      
+          lazyImages.forEach(async function(lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+          })
+        } else {
+          // Possibly fall back to a more compatible method here
+          console.log('error')
+        }
         
-      }
+}
