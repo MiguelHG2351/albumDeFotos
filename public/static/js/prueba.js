@@ -1,21 +1,24 @@
 
-async function renderImage() {
-        
+M.AutoInit()
+
+  async function loadSite() {
+
     // import video from './youtube-video'
 
       // Variables
 
       const cards = document.getElementById('card-container')
       const cards_others = document.getElementById('card-container-others')
+      const ele = document.getElementsByClassName('user-name')
       const videoContainer = document.getElementById('video')
       const form_video = document.getElementById('form-video')
       const category = document.getElementsByClassName('categoryImages')
       // const BASE_URL = `static/images/${i}`
 
-      async function renderTemplate(url) {
-        return `
+      function renderTemplate(url) {
+        return (`
         <div class="col s12 m6 l4 xl3 card">
-              <div class="card-image materialboxed" style="overflow:scroll; height:286px !important;">
+              <div class="card-image materialboxed">
                 <img class="lazy materialboxed" data-src="static/images/${url}.png" data-srcset="static/images/${url}.png 2x, static/images/${url}.png  1x" alt="foto de la tarjeta" src="">
               </div>
               <div class="card-content">
@@ -35,41 +38,37 @@ async function renderImage() {
                 </div>
               </div>
           </div>
-        `
+        `)
       }
-      
-      M.AutoInit()
-        
-        for(var url=1; url<=30; url++) {
+
+      console.log(renderTemplate())
+
+      debugger
+
+        for(var url=1; url<=86; url++) {
           const HTMLString = renderTemplate(url)
           const html = document.implementation.createHTMLDocument();
           html.body.innerHTML = HTMLString;
           cards.append(html.body.children[0])
-          //   console.log(name[url])
+          if (url >= 31) {
+            const HTMLString = renderTemplate(url)
+            const html = document.implementation.createHTMLDocument();
+            html.body.innerHTML = HTMLString;
+            cards_others.append(html.body.children[0])
+          }
         }
 
-        for(var url=31; url<=86; url++) {
-          const HTMLString = renderTemplate(url)
-          const html = document.implementation.createHTMLDocument();
-          html.body.innerHTML = HTMLString;
-          cards_others.append(html.body.children[0])
-        }
-
-
-      const ele = document.getElementsByClassName('user-name');
-
-      async function callback(entries, observer) {
-            entries.forEach(function(entry, index, array) {
-              if (entry.isIntersecting) {
-                console.log(entries)
-                let lazyImage = entry.target;
-                lazyImage.src = lazyImage.dataset.src;
-                lazyImage.srcset = lazyImage.dataset.srcset;
-                lazyImage.classList.remove("lazy");
-                lazyImageObserver.unobserve(lazyImage);
-                ele[1].textContent = ele[1].textContent.slice(0, 7)
-              }
-            })
+        async function callback(entries, observer) {
+          entries.forEach(async function(entry, index, array) {
+            if (entry.isIntersecting) {
+              let lazyImage = entry.target;
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.srcset = lazyImage.dataset.srcset;
+              lazyImage.classList.remove("lazy");
+              lazyImageObserver.unobserve(lazyImage);
+              ele[1].textContent = ele[1].textContent.slice(0, 7)
+            }
+          });
         }
 
         var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
@@ -79,10 +78,11 @@ async function renderImage() {
       
           lazyImages.forEach(async function(lazyImage) {
             lazyImageObserver.observe(lazyImage);
-          })
+          });
         } else {
-          // Possibly fall back to a more compatible method here
-          console.log('error')
+          console.log('No es compatible intersection observer con esta navegador')
         }
-        
+
 }
+
+loadSite()

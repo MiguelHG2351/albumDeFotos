@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit:cover" />
     <title>Albúm</title>
     <link rel="icon" href="static/images/Sin título.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,6 +13,8 @@
 </head>
 <body>
     
+  <!-- Encabezado del sitio -->
+
     <header class="header-site container-fluid">
         <div class="row">
             <div class="col l4 menu-search ">
@@ -22,25 +24,28 @@
                     <div class="input-field col l12">
                       <i class="material-icons prefix">search_circle</i>
                       <input id="icon_prefix" type="text" class="validate">
-                      <label for="icon_prefix">Buscar imagen</label>
+                      <label for="icon_prefix">Buscar imagen</label> <!--Formulario de busqueda || buscar imagen-->
                     </div>
                   </div>
                 </form>
               </div>
               <div class="col l4 center title ">
-                <p>Albúm familiar</p>
+                <p>Albúm familiar</p> <!--Título del sitio-->
               </div>
             <div class="col l4 user-container ">
               <div class="user">
-                    <p>Walter Noel Solorz...</p>
-                    <img loading="lazy" class="user-img" src="static/images/Imagen44.png" alt="imagen de usuario en el header">
+                    <p>Walter Noel Solorz...</p> <!--Nombre del usuario-->
+                    <img class="user-img" src="static/images/2.png" alt="imagen de usuario en el header"> <!--Foto del usuario-->
                   </div>
                   <div class="access">
-                    <button class="btn blue">Submit your profile</button>
+                    <button class="btn blue">Submit your profile</button> <!--Botón para enviar solicitud al usuario-->
                   </div>
                 </div>
         </div>
       </header>
+
+      <!--Contenedor disponible solo para desktop y tablets || Menú de categorías-->
+      
       <div class="container-category">
         <ul class="border-header">
           <li>
@@ -54,6 +59,8 @@
         </ul>
       </div>
 
+      <!--Presentación del sitio-->
+      
       <div class="header-wraper">
         <div>
           <header>
@@ -63,7 +70,9 @@
           </header>
         </div>
       </div>
-
+      
+      <!--Sección de fotos || se renderizan en JavaScript || Los datos estan guardados en una base de datos o localstorage-->
+      
       <section> 
         <section id="card-container" class="row">
 
@@ -88,11 +97,12 @@
     <!-- Sección de videos del sitio -->
 
     <section class="section videos-container">
-      <header class="section center header-videos">
+      <header class="section center header-videos"> <!-- Introducción a la sección de videos -->
         <h3 class="section">Publica tus videos aquí</h3>
         <p class="section">No solo fotos. Sube también tus videos aquí</p>
       </header>
       <div class="video" id="video">
+        <!--El primer video es el más importante en el sitio-->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/jKNMNtW8Sow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <form class="row section form-video" id="form-video" action="#">
           <input class="col s6" type="text" name="url" placeholder="Ingresa una url" />
@@ -103,12 +113,14 @@
 
       <!-- Área de templates que se visualizan con interactividad con el usuario KEYWORD= JAVASCRIPT, DESPLEGABLE, SIDENAV,  -->
       
+    <!-- Sidenav || menu para moviles || menu desplegable || menu vértical -->
+
       <ul id="slide-out" class="sidenav">
       <li><div class="user-view">
         <div class="background">
-          <img src="https://image.freepik.com/psd-gratis/diseno-fondo-abstracto_1297-78.jpg">
+          <img alt="foto de presentación" src="https://image.freepik.com/psd-gratis/diseno-fondo-abstracto_1297-78.jpg">
         </div>
-        <a href="#user"><img class="circle" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c0.5.160.160a/p160x160/91087295_526034654959334_4853660730672545792_n.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=w6lGlFwVbGwAX9lO5I6&_nc_ht=scontent.fmga3-2.fna&oh=9a5cc7cf5f51cc3681da339788bd458a&oe=5EAC49D3"></a>
+        <a href="#user"><img alt="fondo de la cuenta" class="circle" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c0.5.160.160a/p160x160/91087295_526034654959334_4853660730672545792_n.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=w6lGlFwVbGwAX9lO5I6&_nc_ht=scontent.fmga3-2.fna&oh=9a5cc7cf5f51cc3681da339788bd458a&oe=5EAC49D3"></a>
         <a href="#name"><span class="white-text name">Franchesca GABY :V</span></a>
         <a href="#email"><span class="white-text email">gaby1431@gmail.com</span></a>
       </div></li>
@@ -122,7 +134,7 @@
     </ul>
     
     
-    <!-- Boton flotante -->
+    <!-- Boton flotante || botón de opciones -->
     
     <div class="fixed-action-btn">
       <a class="btn-floating btn-large red">
@@ -131,7 +143,7 @@
     <ul>
       <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
       <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-      <li><a target="_blank"  href="https://mega.nz/folder/zP5GWApQ#OdsXc4OwzZNL55AG7pfgzQ" class="btn-floating green"><i class="material-icons">file_download</i></a></li>
+      <li><a target="_blank" href="https://mega.nz/folder/zP5GWApQ#OdsXc4OwzZNL55AG7pfgzQ" class="btn-floating green"><i class="material-icons">file_download</i></a></li>
       <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
     </ul>
   </div>
@@ -146,8 +158,8 @@
   </ul>
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="static/js/index.js"></script>
+    <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="static/js/prueba.js"></script>
 
 </body>
 </html>
