@@ -57,12 +57,12 @@
        
        window.addEventListener('load', () => {
         var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
-        console.log(lazyImages)
+        // console.log(lazyImages)
         if ("IntersectionObserver" in window) {
           let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
+            entries.forEach(function(entry, index, array) {
               if (entry.isIntersecting) {
-                console.log(entries.length)
+                console.log(entries)
                 let lazyImage = entry.target;
                 lazyImage.src = lazyImage.dataset.src;
                 lazyImage.srcset = lazyImage.dataset.srcset;
@@ -82,12 +82,6 @@
       
        })
 
-
-    // async function hello() {
-    //   const api = await fetch('https://miguelhg2351.github.io/albumDeFotos/public/static/js/index.json')
-    //   const response = await api.json()
-    //   console.log(response.hola.holaMundo)
-    // }
-
-    // hello()
-
+      async function renderImage() {
+        
+      }
