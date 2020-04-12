@@ -17,5 +17,6 @@ const router = express.Router();
 //     });
 
 app.use(express.static('public'))
+app.use(express.static('static/js'))
 app.use(router);
 app.listen(process.env.PORT || 5000);

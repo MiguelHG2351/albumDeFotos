@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit:cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
     <title>Albúm</title>
     <link rel="icon" href="static/images/Sin título.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,7 +15,7 @@
     
   <!-- Encabezado del sitio -->
 
-    <header class="header-site container-fluid">
+    <header class="header-site container-fluid z-depht-3">
         <div class="row">
             <div class="col l4 menu-search ">
                 <button data-target="slide-out" class="btn white black-text sidenav-trigger"><i class="material-icons">menu</i>menu</button>
@@ -46,7 +46,7 @@
 
       <!--Contenedor disponible solo para desktop y tablets || Menú de categorías-->
       
-      <div class="container-category">
+      <div class="container-category z-depht-3">
         <ul class="border-header">
           <li>
             <!-- Dropdown Trigger -->
@@ -61,7 +61,7 @@
 
       <!--Presentación del sitio-->
       
-      <div class="header-wraper">
+      <div class="header-wrapper z-depht-3">
         <div>
           <header>
             <h4>Guarda recuerdos de tus familiares</h4>
@@ -73,14 +73,16 @@
       
       <!--Sección de fotos || se renderizan en JavaScript || Los datos estan guardados en una base de datos o localstorage-->
       
-      <section> 
+      <section class="z-depht-3"> 
         <section id="card-container" class="row">
 
         </section>
-        <section id="others" class="row center">
+        <section id="others" class="row center family">
           <h4>Categoría: Familia</h4>
-          <div class="card">
-            
+          <div class="families">
+            <button>Acevedo</button>
+            <button>Hernández</button>
+            <button>Solorzano</button>
           </div>
           <i class="material-icons">keyboard_arrow_right</i>
         </section>

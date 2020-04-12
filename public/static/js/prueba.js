@@ -1,19 +1,24 @@
+// import Video from './index.json'
+
+async function fetchAPI() {
+  const hola = await fetch('index.json')
+  console.log(hola)
+}
+
+fetchAPI()
 
 M.AutoInit()
 
   async function loadSite() {
-
-    // import video from './youtube-video'
+    'use strict'
 
       // Variables
 
       const cards = document.getElementById('card-container')
       const cards_others = document.getElementById('card-container-others')
-      const ele = document.getElementsByClassName('user-name')
       const videoContainer = document.getElementById('video')
       const form_video = document.getElementById('form-video')
       const category = document.getElementsByClassName('categoryImages')
-      // const BASE_URL = `static/images/${i}`
 
       function renderTemplate(url) {
         return (`
@@ -40,12 +45,10 @@ M.AutoInit()
           </div>
         `)
       }
-
-      console.log(renderTemplate())
-
       debugger
+      const name = document.getElementsByClassName('user-name')
 
-        for(var url=1; url<=86; url++) {
+        for(let url=1; url<=86; url++) {
           const HTMLString = renderTemplate(url)
           const html = document.implementation.createHTMLDocument();
           html.body.innerHTML = HTMLString;
@@ -58,31 +61,40 @@ M.AutoInit()
           }
         }
 
-        async function callback(entries, observer) {
-          entries.forEach(async function(entry, index, array) {
-            if (entry.isIntersecting) {
-              let lazyImage = entry.target;
-              lazyImage.src = lazyImage.dataset.src;
-              lazyImage.srcset = lazyImage.dataset.srcset;
-              lazyImage.classList.remove("lazy");
-              lazyImageObserver.unobserve(lazyImage);
-              ele[1].textContent = ele[1].textContent.slice(0, 7)
-            }
-          });
-        }
+      localStorage.setItem('images', cards.children[1].children[0].children[0].src)
 
+        for (let i = 0; i < 82; i++) {
+          name[i].textContent = name[i].textContent.slice(0, 8) 
+        }
+        
         var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
         // console.log(lazyImages)
         if ("IntersectionObserver" in window) {
-          let lazyImageObserver = new IntersectionObserver(callback);
-      
-          lazyImages.forEach(async function(lazyImage) {
+          let lazyImageObserver = new IntersectionObserver(function callback(entries, observer) {
+            entries.forEach(function(entry, index, array) {
+              if (entry.isIntersecting) {
+                let lazyImage = entry.target;
+                lazyImage.src = lazyImage.dataset.src;
+                lazyImage.srcset = lazyImage.dataset.srcset;
+                lazyImage.classList.remove("lazy");
+                lazyImageObserver.unobserve(lazyImage);
+                name[1].textContent = name[1].textContent.slice(0, 7)
+              }
+            });
+          });
+          
+          lazyImages.forEach(function(lazyImage) {
             lazyImageObserver.observe(lazyImage);
           });
         } else {
           console.log('No es compatible intersection observer con esta navegador')
         }
+      
+        (() => {alert('Hola Mundo');})()
+        if (cards) {
+          
+        }
 
-}
-
-loadSite()
+    }
+      
+      loadSite()
