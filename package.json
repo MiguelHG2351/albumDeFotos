@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --watch src index.js",
@@ -19,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/MiguelHG2351/albumDeFotos/issues"
   },
-  "homepage": "https://github.com/MiguelHG2351/albumDeFotos#readme",
+  "homepage": "https://github.com/MiguelHG2351/albumDeFotos",
   "dependencies": {
     "ejs": "^3.0.2",
     "express": "^4.17.1",

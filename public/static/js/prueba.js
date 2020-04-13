@@ -1,7 +1,7 @@
 // import Video from './index.json'
 
 async function fetchAPI() {
-  const hola = await fetch('index.json')
+  const hola = await fetch('../../index.json')
   console.log(hola)
 }
 

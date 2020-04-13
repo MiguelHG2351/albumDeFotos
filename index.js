@@ -1,22 +1,19 @@
 'use strict';
 
+// paquetes
 const express = require('express');
 const app = express();
-const morgan = require('morgan')
+const morgan = require('morgan');
+
+// settings
+app.set('view engine', 'ejs');
+
+// middlewars
+app.use(express.json());
+app.use(morgan('dev'));
 
 
-app.use(express.json())
-app.use(morgan('dev'))
+// rutas
 
-const router = express.Router();
-
-// router.route('/')
-
-//     .get(function (req, res) {
-//         res.send('Esta es mi primera ruta con Express 4');
-//     });
-
-app.use(express.static('public'))
-app.use(express.static('static/js'))
-app.use(router);
+app.use(express.static('public'));
 app.listen(process.env.PORT || 5000);
