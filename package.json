@@ -25,7 +25,8 @@
   "dependencies": {
     "ejs": "^3.0.2",
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "node-github-pages": "^0.1.1"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",

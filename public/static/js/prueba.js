@@ -1,8 +1,11 @@
 // import Video from './index.json'
 
 async function fetchAPI() {
-  const hola = await fetch('../../index.json')
-  console.log(hola)
+  const response = await fetch('../../index.json')
+  const json = await response.json()
+  json.forEach((element) => {
+    console.log(element)
+  })
 }
 
 fetchAPI()
@@ -88,11 +91,6 @@ M.AutoInit()
           });
         } else {
           console.log('No es compatible intersection observer con esta navegador')
-        }
-      
-        (() => {alert('Hola Mundo');})()
-        if (cards) {
-          
         }
 
     }
