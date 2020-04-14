@@ -20,49 +20,12 @@
     
   <!-- Encabezado del sitio -->
 
-    <header class="header-site container-fluid z-depht-3">
-        <div class="row">
-            <div class="col l4 menu-search ">
-                <button data-target="slide-out" class="btn white black-text sidenav-trigger"><i class="material-icons">menu</i>menu</button>
-                <form style="padding: 0;margin: 0;">
-                  <div class="row">
-                    <div class="input-field col l12">
-                      <i class="material-icons prefix">search_circle</i>
-                      <input id="icon_prefix" type="text" class="validate">
-                      <label for="icon_prefix">Buscar imagen</label> <!--Formulario de busqueda || buscar imagen-->
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="col l4 center title ">
-                <p>Albúm familiar</p> <!--Título del sitio-->
-              </div>
-            <div class="col l4 user-container ">
-              <div class="user">
-                    <p>Walter Noel Solorz...</p> <!--Nombre del usuario-->
-                    <img class="user-img" src="static/images/2.png" alt="imagen de usuario en el header"> <!--Foto del usuario-->
-                  </div>
-                  <div class="access">
-                    <button class="btn blue">Submit your profile</button> <!--Botón para enviar solicitud al usuario-->
-                  </div>
-                </div>
-        </div>
-      </header>
+  <header class="header-site">
+    <nav class="transparent">
+      <button class="sidenav-trigger btn" data-target="slide-out"><i class="material-icons">menu</i>MENU</button>
 
-      <!--Contenedor disponible solo para desktop y tablets || Menú de categorías-->
-      
-      <div class="container-category z-depht-3">
-        <ul class="border-header">
-          <li>
-            <!-- Dropdown Trigger -->
-            <a class='dropdown-trigger black-text' href='#' data-target='dropdown1'>Select Category</a>
-          </li>
-          <li><a href="#family" class="black-text">Familia</a></li>
-          <li><a href="#mom" class="black-text">Mamá</a></li>
-          <li><a href="#others" class="black-text">Todos</a></li>
-          <li><a href="#others" class="black-text">Otros</a></li>
-        </ul>
-      </div>
+    </nav>
+  </header>
 
       <!--Presentación del sitio-->
       

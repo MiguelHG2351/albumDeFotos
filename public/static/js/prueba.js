@@ -1,19 +1,20 @@
-// import Video from './index.json'
+document.addEventListener('DOMContentLoaded', () => {
+  M.AutoInit()
+})
 
-async function fetchAPI() {
-  const response = await fetch('../../index.json')
-  const json = await response.json()
-  json.forEach((element) => {
-    console.log(element)
-  })
-}
+class API {
+  async fetchAPI() {
+    const response = await fetch('../index.json')
+    const json = await response.json()
+    json[0].forEach(element => {
+      console.log(element)
+    });
+    // console.log(json[0][])
+      // console.log(json[0])
 
-fetchAPI()
-
-M.AutoInit()
-
-  async function loadSite() {
-    'use strict'
+  }
+  async loadSite() {
+'use strict'
 
       // Variables
 
@@ -40,7 +41,7 @@ M.AutoInit()
                    <p class="user-name">Walter Solorzano</p>
                 </div>
               <div>
-                  <button class="btn-user blue">add image</button>
+                  <button class="btn-user blue"><a href="https://twitter.com/intent/tweet">share twiter</a></button>
                   <button class="btn-user orange">add user</button>
                   <button class="btn-user red">send mail</button>
                 </div>
@@ -48,7 +49,6 @@ M.AutoInit()
           </div>
         `)
       }
-      debugger
       const name = document.getElementsByClassName('user-name')
 
         for(let url=1; url<=86; url++) {
@@ -63,10 +63,9 @@ M.AutoInit()
             cards_others.append(html.body.children[0])
           }
         }
+      localStorage.setItem('images', cards.children[0].children[0].children[0].dataset.src)
 
-      localStorage.setItem('images', cards.children[1].children[0].children[0].src)
-
-        for (let i = 0; i < 82; i++) {
+        for (let i = 0; i < 86; i++) {
           name[i].textContent = name[i].textContent.slice(0, 8) 
         }
         
@@ -94,5 +93,8 @@ M.AutoInit()
         }
 
     }
-      
-      loadSite()
+}
+
+const api = new API()
+api.loadSite()
+api.fetchAPI()

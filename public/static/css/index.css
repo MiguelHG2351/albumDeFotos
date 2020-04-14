@@ -26,16 +26,10 @@ body {
 }
 
 @media (max-width:3840px) {
-    .header-site {
-        height: 70px;
-        /* padding: 8px; */
-        /* border-bottom:1px solid #E6EAEA; */
-        border-bottom: .3px solid rgba(0, 0, 0, 0.21);
-    }
 
     .header-wrapper {
         margin: 12px 0;
-        background-image: url(../images/recuerdos.png);
+        background-image: url(https://images.alphacoders.com/570/570119.jpg);
         background-color: rgba(0, 0, 0, .7);
         background-repeat: no-repeat;
         background-size: cover;
@@ -60,28 +54,6 @@ body {
         padding: 2em;
         min-height: 768px;
     }
-    
-    .menu-search {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .menu-search form {
-        /* margin-left: 2em; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .menu-search form button {
-        border: none;
-    }
-
-    .header-site .row, .header-site .row .col {
-        margin: 0;
-        height: inherit;
-        padding: 0;
-    }
 
     .form-search button {
         border:.3px solid rgba(0, 0, 0, 0.21) !important;
@@ -94,31 +66,6 @@ body {
         border-radius: 50%;
         transition: all 0.3s ease-in-out;
         overflow: hidden;
-    }
-    
-    .user-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        text-align: center;
-    }
-
-    .title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .title p {
-        margin: 0;
-        text-align: center;
-        /* height: 100%; */
-        font-size: 28px;
-    }
-
-    .user {
-        display: flex;
-        align-items: center;
     }
 
     .divider {
@@ -162,6 +109,11 @@ body {
         border: none;
         padding: 5px;
         font-size: 10px;
+    }
+
+    .btn-user a {
+        margin: 0 !important;
+        color: #fff !important;
     }
 
     .categoryImages {
@@ -213,14 +165,7 @@ body {
 } */
 
 @media(max-width:992px) {
-    .header-site {
-        height: 50px;
-        /* padding: 8px; */
-        /* border-bottom:1px solid #E6EAEA; */
-        border-bottom: .2px solid rgba(0, 0, 0, 0.21);
-    }
 
-    
     .menu-search {
         display: flex;
         justify-content: flex-end;
@@ -229,12 +174,6 @@ body {
 
     .menu-search form button {
         border: none;
-    }
-
-    .header-site .row, .header-site .row .col {
-        margin: 0;
-        height: inherit;
-        padding: 0;
     }
 
     .form-search button {
@@ -307,12 +246,14 @@ body {
     }
 
     .btn-user {
+        /* display: block; */
         cursor: pointer;
         border-radius: 12px;
-        color: #fff;
+        color: #fff !important;
         border: none;
         padding: 5px;
         font-size: 10px;
+        overflow: hidden;
     }
 }
 
