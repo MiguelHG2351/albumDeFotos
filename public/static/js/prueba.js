@@ -12,8 +12,11 @@ class API {
       const form_video = document.getElementById('form-video')
       const category = document.getElementsByClassName('categoryImages')
 
-      const response = await fetch('../index.json')
-      const data = await response.json()
+      async function getData(url) {
+        const response = await fetch('../index.json')
+        const data = await response.json()
+        return data[url]
+      }
 
       function renderTemplate(url, author) {
         return (`
@@ -46,7 +49,7 @@ class API {
           return html.body.children[0]
       }
       function renderListImage(category, container) {
-        data[category].forEach(element => {
+        category.forEach(element => {
             const HTMLString = renderTemplate(element.image, element.author.slice(0,7))
             const html = createTemplate(HTMLString)
             return container.append(html);
@@ -55,14 +58,27 @@ class API {
       }
 
 
+      async function cacheExist(category, name) {
+        const cacheList = localStorage.getItem(name)
+          if(cacheList) {
+          return JSON.parse(cacheList)
+        }
+        const dataNew = await getData(category)
+        localStorage.setItem(name, JSON.stringify(dataNew))  
+        return dataNew
+      }
 
-      renderListImage(0, cards)
-      renderListImage(1, cards_others)
+      const cards1 = await cacheExist(0, 'abuela')
+      const cards2 = await cacheExist(1, 'otros')
+      console.log(cards1)
+      console.log(cards2)
+      renderListImage(cards1, cards)
+      renderListImage(cards2, cards_others)
 
       const name = document.getElementsByClassName('user-name')
 
 
-      localStorage.setItem('images', JSON.stringify(data[0]))
+      // localStorage.setItem('images', JSON.stringify(data[0]))
         
         var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
         // console.log(lazyImages)
