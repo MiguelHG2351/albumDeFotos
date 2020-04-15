@@ -13,7 +13,7 @@ class API {
       const category = document.getElementsByClassName('categoryImages')
 
       async function getData(url) {
-        const response = await fetch('../index.json')
+        const response = await fetch('https://miguelhg2351.github.io/albumDeFotos/public/index.json')
         const data = await response.json()
         return data[url]
       }
