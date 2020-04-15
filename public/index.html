@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="description" content="Sitio web para subir videos e imagenes familiares. Album" />
+    <meta name="theme-color" content="#3138d1">
     <meta name="og:url" content="https://miguelhg2351.github.io/albumDeFotos/public/" />
     <meta name="og:image" content="https://as01.epimg.net/betech/imagenes/2018/09/04/portada/1536088061_940943_1536095393_noticia_normal.jpg" />
     <meta name="og:title" content="Album familiar" />
     <meta name="og:type" content="website" />
     <meta name="og:description" content="Album familiar 2.0" />
     <title>Albúm</title>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/images/Sin título.png">
+    <!-- iPhone con pantalla de alta resolución: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/images/Sin título.png">
+    <!-- iPad de primera y segunda generación: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/images/Sin título.png">
+    <!-- Dispositivos iPhone sin pantalla Retina, iPod Touch y Android 2.1+: -->
+    <link rel="apple-touch-icon-precomposed" href="static/images/Sin título.png">
+    <!-- favicono básico -->
     <link rel="icon" href="static/images/Sin título.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -38,7 +48,7 @@
       
       <div class="header-wrapper z-depht-3">
         <div>
-          <header>
+          <header class="header-intro">
             <h4>Guarda recuerdos de tus familiares</h4>
             <h3>Y SERES QUERIDOS</h3>
             <p>Puedes guardar tus fotos y dar acceso a otros usuarios</p>
@@ -51,15 +61,6 @@
       <section class="z-depht-3"> 
         <section id="card-container" class="row">
 
-        </section>
-        <section id="others" class="row center family">
-          <h4>Categoría: Familia</h4>
-          <div class="families">
-            <button>Acevedo</button>
-            <button>Hernández</button>
-            <button>Solorzano</button>
-          </div>
-          <i class="material-icons">keyboard_arrow_right</i>
         </section>
         <section id="card-container-family center" class="row">
           <h4>Categoría: Otros</h4>
@@ -80,7 +81,7 @@
       </header>
       <div class="video" id="video">
         <!--El primer video es el más importante en el sitio-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jKNMNtW8Sow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe title="Video de youtube donde aparece la familia" width="560" height="315" src="https://www.youtube.com/embed/jKNMNtW8Sow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <form class="row section form-video" id="form-video" action="#">
           <input class="col s6" type="text" name="url" placeholder="Ingresa una url" />
           <input class="col s6" type="file" name="url" value="Ingresa el video" accept="video/*" />

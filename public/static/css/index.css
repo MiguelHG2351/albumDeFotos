@@ -236,6 +236,10 @@ body {
         display: none;
     }
 
+    .header-intro h4 {
+        font-size: 14px;
+    }
+
     .header-wrapper {
         margin: 0;
     }
@@ -249,9 +253,5 @@ body {
         position: fixed;
         left: 0;
         
-    }
-
-    .families:first-child {
-        background-image: url(../images/84.png);
     }
 }
