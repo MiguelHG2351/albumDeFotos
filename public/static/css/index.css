@@ -8,15 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-.menu-search button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    box-shadow: unset;
-    border:.3px solid rgba(0, 0, 0, 0.21)
-}
-
 .d-none {
     display: none;
 }
@@ -26,6 +17,26 @@ body {
 }
 
 @media (max-width:3840px) {
+
+    .btn-menu {
+        background-color: #3138d1;
+        outline: none;
+        border: none;
+        color: #fff;
+    }
+
+    .list-nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .list-nav li {
+        margin-left: 12px;
+    }
+
+    .list-nav li a {
+        color: #000 !important;
+    }
 
     .header-wrapper {
         margin: 12px 0;
@@ -53,11 +64,6 @@ body {
         justify-content: center;
         padding: 2em;
         min-height: 768px;
-    }
-
-    .form-search button {
-        border:.3px solid rgba(0, 0, 0, 0.21) !important;
-        box-shadow: unset;
     }
 
     .user-img {
@@ -165,22 +171,6 @@ body {
 } */
 
 @media(max-width:992px) {
-
-    .menu-search {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-
-    .menu-search form button {
-        border: none;
-    }
-
-    .form-search button {
-        border:.3px solid rgba(0, 0, 0, 0.21) !important;
-        box-shadow: unset;
-    }
-
     .user-img {
         width: 28px;
         height: 28px;
@@ -218,22 +208,6 @@ body {
         align-items: center;
     }
 
-    .divider {
-        padding: 0;
-    }
-
-    .border-header {
-        border: .3px solid rgba(0, 0, 0, 0.21);
-    }
-
-    .border-header li {
-        display: inline-block;
-        padding: 1.2rem;
-        cursor: pointer;
-        font-family: 'Montserrat', sans-serif;
-        border: .3px solid rgba(0, 0, 0, 0.21);
-    }
-
     .card-content {
         display: flex;
         justify-content: space-between;
@@ -258,9 +232,23 @@ body {
 }
 
 @media (max-width:600px) {
+    .header-site {
+        display: none;
+    }
+
+    .header-wrapper {
+        margin: 0;
+    }
+    
     .card-image {
         height: auto;
         overflow-y: none;
+    }
+
+    .btn-menu-mobile {
+        position: fixed;
+        left: 0;
+        
     }
 
     .families:first-child {
