@@ -1,129 +1,362 @@
 [
     [
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/1.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/1.png",
+            "author": "Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/2.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/2.png",
+            "author": "Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/3.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/3.png",
+            "author": "Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/4.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/4.png",
+            "author": "Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/5.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/5.png",
+            "author": "Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/6.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/6.png",
+            "author": "Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/7.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/7.png",
+            "author": "Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/8.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/8.png",
+            "author": "Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/9.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/9.png",
+            "author": "Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/10.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/10.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/11.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/11.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/12.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/12.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/13.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/13.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/14.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/14.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/15.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/15.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/16.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/16.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/17.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/17.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/18.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/18.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/19.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/19.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/20.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/20.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/21.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/21.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/22.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/22.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/23.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/23.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/24.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/24.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/25.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/25.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/26.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/26.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/27.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/27.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/28.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/28.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/29.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/29.png",
+            "author":"Walter Solorzano"
         },
         {
-            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/30.png"
-            
+            "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/30.png",
+            "author":"Walter Solorzano"
         }
     ],
     [
         {
-            
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/31.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/32.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/33.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/33.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/34.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/35.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/36.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/37.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/38.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/39.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/40.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/41.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/42.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/43.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/43.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/44.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/45.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/46.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/47.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/48.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/49.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/50.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/51.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/52.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/52.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/53.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/54.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/55.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/56.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/57.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/58.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/59.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/60.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/61.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/62.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/63.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/64.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/65.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/66.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/67.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/68.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/69.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/70.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/71.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/72.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/73.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/74.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/75.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/76.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/77.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/78.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/79.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/80.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/81.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/82.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/83.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/84.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/85.png",
+            "author":"Walter Solorzano"
+        },
+        {
+            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/86.png",
+            "author":"Walter Solorzano"
         }
     ]
 ]

@@ -1,21 +1,25 @@
+M.AutoInit()
 
-    // import video from './youtube-video'
+class API {
+  
+  async loadSite() {
 
       // Variables
 
       const cards = document.getElementById('card-container')
       const cards_others = document.getElementById('card-container-others')
-      const ele = document.getElementsByClassName('user-name')
       const videoContainer = document.getElementById('video')
       const form_video = document.getElementById('form-video')
       const category = document.getElementsByClassName('categoryImages')
-      // const BASE_URL = `static/images/${i}`
 
-      function renderTemplate(url) {
-        return `
+      const response = await fetch('https://miguelhg2351.github.io/albumDeFotos/public/index.json')
+      const data = await response.json()
+
+      function renderTemplate(url, author) {
+        return (`
         <div class="col s12 m6 l4 xl3 card">
-              <div class="card-image materialboxed">
-                <img class="lazy materialboxed" data-src="static/images/${url}.png" data-srcset="static/images/${url}.png 2x, static/images/${url}.png  1x" alt="foto de la tarjeta" src="">
+              <div class="card-image">
+                <img class="lazy materialboxed" data-src="${url}" data-srcset="${url} 2x, ${url}  1x" alt="foto de la tarjeta" src="">
               </div>
               <div class="card-content">
                 <div><p class="name-photo">Francisca Vallecillo</p></div>
@@ -25,44 +29,45 @@
                 <div class="user-card">
                   <img class="user-img" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c38.0.160.160a/p160x160/86699303_832721240486433_5068736281786187776_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=wwMxlVUmKrIAX_Y4eCt&_nc_ht=scontent.fmga3-2.fna&oh=d753d59c0bc1bc3b3453e349edd14edf&oe=5EAD5ADD"
                    alt="Foto del usuario">
-                   <p class="user-name">Walter Solorzano</p>
+                   <p class="user-name">${author}</p>
                 </div>
               <div>
-                  <button class="btn-user blue">add image</button>
+                  <button class="btn-user blue"><a href="https://twitter.com/intent/tweet">share twiter</a></button>
                   <button class="btn-user orange">add user</button>
                   <button class="btn-user red">send mail</button>
                 </div>
               </div>
           </div>
-        `
+        `)
+      }
+      function createTemplate(htmlString) {
+        const html = document.implementation.createHTMLDocument();
+          html.body.innerHTML = htmlString;
+          return html.body.children[0]
+      }
+      function renderListImage(category, container) {
+        data[category].forEach(element => {
+            const HTMLString = renderTemplate(element.image, element.author.slice(0,7))
+            const html = createTemplate(HTMLString)
+            return container.append(html);
+            element.author = element.author.slice(0, 7)
+          });
       }
 
-      document.addEventListener('DOMContentLoaded', () => {
+
+
+      renderListImage(0, cards)
+      renderListImage(1, cards_others)
+
+      const name = document.getElementsByClassName('user-name')
+
+
+      localStorage.setItem('images', JSON.stringify(data[0]))
         
-        for(var url=1; url<=86; url++) {
-          const HTMLString = renderTemplate(url)
-          const html = document.implementation.createHTMLDocument();
-          html.body.innerHTML = HTMLString;
-          cards.append(html.body.children[0])
-          if (url > 30) {
-            const HTMLString = renderTemplate(url)
-            const html = document.implementation.createHTMLDocument();
-            html.body.innerHTML = HTMLString;
-            cards_others.append(html.body.children[0])
-          }
-        }
-
-        // for(var url=31; url<=86; url++) {
-        // }
-            M.AutoInit()
-
-       })
-       
-       window.addEventListener('load', () => {
         var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
         // console.log(lazyImages)
         if ("IntersectionObserver" in window) {
-          let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+          let lazyImageObserver = new IntersectionObserver(function callback(entries, observer) {
             entries.forEach(function(entry, index, array) {
               if (entry.isIntersecting) {
                 let lazyImage = entry.target;
@@ -70,20 +75,20 @@
                 lazyImage.srcset = lazyImage.dataset.srcset;
                 lazyImage.classList.remove("lazy");
                 lazyImageObserver.unobserve(lazyImage);
-                ele[1].textContent = ele[1].textContent.slice(0, 7)
+                name[1].textContent = name[1].textContent.slice(0, 7)
               }
             });
           });
-      
+          
           lazyImages.forEach(function(lazyImage) {
             lazyImageObserver.observe(lazyImage);
           });
         } else {
           console.log('No es compatible intersection observer con esta navegador')
         }
-      
-       })
 
-      async function renderImage() {
-        
-      }
+    }
+}
+
+const api = new API()
+api.loadSite()
