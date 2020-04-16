@@ -1,4 +1,13 @@
-M.AutoInit()
+
+// document.addEventListener('contextmenu', e => {
+//   e.preventDefault()
+// })
+
+// document.addEventListener('keydown', (event) => {
+//   if (event.key == 'F12') {
+//     event.preventDefault()
+//   }
+// });
 
 class API {
   
@@ -13,25 +22,27 @@ class API {
       const category = document.getElementsByClassName('categoryImages')
 
       async function getData(url) {
-        const response = await fetch('https://miguelhg2351.github.io/albumDeFotos/public/index.json')
+        const response = await fetch('../index.json')
         const data = await response.json()
         return data[url]
       }
 
-      function renderTemplate(url, author) {
+      function renderTemplate(url, author, description, fecha) {
         return (`
         <div class="col s12 m6 l4 xl3 card">
               <div class="card-image">
                 <img class="lazy materialboxed" data-src="${url}" data-srcset="${url} 2x, ${url}  1x" alt="foto de la tarjeta" src="">
               </div>
               <div class="card-content">
-                <div><p class="name-photo">Francisca Vallecillo</p></div>
-                <div><p class="date-photo">march 28, 2020</p></div>
+                <div><p class="name-photo">${description}</p></div>
+                <div><p class="date-photo">${fecha}</p></div>
               </div>
               <div class="card-action">
                 <div class="user-card">
-                  <img class="user-img" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c38.0.160.160a/p160x160/86699303_832721240486433_5068736281786187776_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=wwMxlVUmKrIAX_Y4eCt&_nc_ht=scontent.fmga3-2.fna&oh=d753d59c0bc1bc3b3453e349edd14edf&oe=5EAD5ADD"
-                   alt="Foto del usuario">
+                  <div>
+                    <img class="user-img" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c38.0.160.160a/p160x160/86699303_832721240486433_5068736281786187776_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=wwMxlVUmKrIAX_Y4eCt&_nc_ht=scontent.fmga3-2.fna&oh=d753d59c0bc1bc3b3453e349edd14edf&oe=5EAD5ADD"
+                    alt="Foto del usuario">
+                  </div>
                    <p class="user-name">${author}</p>
                 </div>
               <div>
@@ -50,10 +61,15 @@ class API {
       }
       function renderListImage(category, container) {
         category.forEach(element => {
-            const HTMLString = renderTemplate(element.image, element.author.slice(0,7))
-            const html = createTemplate(HTMLString)
-            return container.append(html);
-            element.author = element.author.slice(0, 7)
+          let image = element.image
+          let author = element.author.slice(0,7)
+          let description = element.description
+          // const hola = element.description.slice(0,29)
+          // let description = `${hola.slice(0,20)}`
+          // console.log(hola)
+          const HTMLString = renderTemplate(image, author, description, element.fecha);
+          const html = createTemplate(HTMLString)
+          return container.append(html);
           });
       }
 
@@ -108,3 +124,4 @@ class API {
 
 const api = new API()
 api.loadSite()
+M.AutoInit()

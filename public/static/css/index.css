@@ -90,6 +90,7 @@ body {
         border: .3px solid rgba(0, 0, 0, 0.21);
     }
 
+
     .card-image {
         overflow-y:scroll;
         height:286px;
@@ -100,6 +101,14 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 12px;
+        overflow-y: scroll;
+        height: 93px;
+    }
+
+    .card-content div:first-child, .card-contentcard-content div:last-child {
+        width: 48%;
+        overflow: hidden;
     }
 
     .card-action, .user-card {
@@ -134,17 +143,52 @@ body {
 
 
     .video {
-        display: inline-flex;
-        align-self: baseline;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         align-content: center;
         justify-content: space-around;
-        flex-wrap: nowrap;
     }
 
     .header-videos {
         clip-path: polygon(0px 0px, 100% 0px, 100% 85%, 0px 100%);
         background-color: #f0d91d;
         padding: 65px;
+    }
+
+    .title-footer {
+        color: #fff;
+    }
+
+    .title-footer figure img {
+        margin: 0 0 5px -15px;
+        width: 150px;
+    }
+
+    .list-family {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        padding: 1rem;
+        height: auto;
+    }
+    
+    .list-family div:first-child {
+        margin-bottom: 12px;
+    }
+
+    .list-family div {
+        display: flex;
+        text-align: center;
+        color: #fff;
+        padding: 4px;
+        margin: 22px 0;
+        border-left: 5px solid rgb(78, 13, 231);
+    }
+
+    .list-family div a {
+        color: #fff;
     }
 
 }
@@ -229,6 +273,16 @@ body {
         font-size: 10px;
         overflow: hidden;
     }
+
+    .video {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-content: center;
+        justify-content: space-around;
+        overflow: scroll;
+    }
+
 }
 
 @media (max-width:600px) {
@@ -254,4 +308,9 @@ body {
         left: 0;
         
     }
+
+    .video iframe {
+        margin: 5px;
+    }
+
 }
