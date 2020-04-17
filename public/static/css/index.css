@@ -103,7 +103,7 @@ body {
         align-items: center;
         padding: 12px;
         overflow: hidden;
-        max-height: 93px;
+        height: 93px;
     }
 
     .card-content div:first-child, .card-contentcard-content div:last-child {
