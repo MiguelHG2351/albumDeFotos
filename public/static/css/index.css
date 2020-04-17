@@ -102,7 +102,7 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 12px;
-        overflow-y: scroll;
+        overflow: hidden;
         height: 93px;
     }
 
