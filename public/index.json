@@ -455,56 +455,67 @@
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/76.png",
             "author":"Walter Solorzano",
-            "fecha":"april 05, 2020"
+            "fecha":"april 05, 2020",
+            "description": "Abuelo Orlando"
         },
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/77.png",
             "author":"Walter Solorzano",
-            "fecha":"april 05, 2020"
+            "fecha":"april 05, 2020",
+            "description": "Otoniel Gaitan y Bryan Solorzano"
         },
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/78.png",
             "author":"Walter Solorzano",
-            "fecha":"april 05, 2020"
+            "fecha":"april 05, 2020",
+            "description": ""
         },
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/79.png",
             "author":"Walter Solorzano",
-            "fecha":"april 05, 2020"
+            "fecha":"april 05, 2020",
+            "description": "Lester Gaitan y Lester Enrique"
         },
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/80.png",
             "author":"Walter Solorzano",
-            "fecha":"april 05, 2020"
+            "fecha":"april 05, 2020",
+            "description": "Lester Gaitan Vallecillo"
         },
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/81.png",
             "author":"Walter Solorzano",
-            "fecha":"april 05, 2020"
+            "fecha":"april 05, 2020",
+            "description": ""
         },
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/82.png",
             "author":"Walter Solorzano",
-            "fecha":"april 05, 2020"
+            "fecha":"april 05, 2020",
+            "description": ""
         },
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/83.png",
             "author":"Walter Solorzano",
-            "fecha":"april 01, 2020"
+            "fecha":"april 01, 2020",
+            "description": "Lester, Enrique, Joel"
         },
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/84.png",
-            "author":"Walter Solorzano"
+            "author":"Walter Solorzano",
+            "description": "Lester y Lester Enrique"
         },
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/85.png",
             "author":"Walter Solorzano",
-            "fecha":"april 01, 2020"
+            "fecha":"april 01, 2020",
+            "description": "Adorando a Dios"
         },
         {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/86.png",
             "author":"Walter Solorzano",
-            "fecha":"april 01, 2020"
+            "fecha":"april 01, 2020",
+            "description": "Promoción de Otoniel Vallecillo"
         }
     ]
 ]
