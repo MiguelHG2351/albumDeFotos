@@ -1,13 +1,13 @@
 
-// document.addEventListener('contextmenu', e => {
-//   e.preventDefault()
-// })
+document.addEventListener('contextmenu', e => {
+  e.preventDefault()
+})
 
-// document.addEventListener('keydown', (event) => {
-//   if (event.key == 'F12') {
-//     event.preventDefault()
-//   }
-// });
+document.addEventListener('keydown', (event) => {
+  if (event.key == 'F12') {
+    event.preventDefault()
+  }
+});
 
 class API {
   
