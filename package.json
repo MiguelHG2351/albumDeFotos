@@ -8,8 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
-    "dev": "nodemon --watch src index.js"
+    "start": "nodemon --watch src index.js",
+    "dev": "nodemon --watch src index.js",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,19 @@
   },
   "homepage": "https://github.com/MiguelHG2351/albumDeFotos",
   "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.2",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
+    "html-webpack-plugin": "^4.2.0",
     "morgan": "^1.10.0",
-    "node-github-pages": "^0.1.1"
+    "node-github-pages": "^0.1.1",
+    "style-loader": "^1.1.4",
+    "webpack-dev-server": "^3.10.3"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
