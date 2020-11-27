@@ -1,4 +1,3 @@
-
 document.addEventListener('contextmenu', e => {
   e.preventDefault()
 })
@@ -100,7 +99,7 @@ class API {
         // console.log(lazyImages)
         if ("IntersectionObserver" in window) {
           let lazyImageObserver = new IntersectionObserver(function callback(entries, observer) {
-            entries.forEach(function(entry, index, array) {
+            entries.forEach(function(entry) {
               if (entry.isIntersecting) {
                 let lazyImage = entry.target;
                 lazyImage.src = lazyImage.dataset.src;
