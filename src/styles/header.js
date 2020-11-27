@@ -1,4 +1,20 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+
+export const MenuBtn = styled.div`
+    display: flex;
+    align-items: center;
+    & button {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+        user-select: none;
+        cursor: pointer;
+        & i {
+            font-size: 32px;
+        }
+    }
+`;
 
 export const Header = styled.header`
     background-color: #09f;
@@ -13,19 +29,5 @@ export const Header = styled.header`
     }
 
     .menu-btn {
-        display: flex;
-        align-items: center;
-        & button {
-            border: none;
-            background-color: transparent;
-            color: #fff;
-            outline: none;
-            user-select: none;
-            & i {
-                font-size: 32px;
-            }
-        }
     }
-
-`
-
+`;

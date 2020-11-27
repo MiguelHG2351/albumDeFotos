@@ -3,7 +3,7 @@ const HtmlWebackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-    entry: './src/index.js',
+    entry: ['react-hot-loader/patch', './src'],
 
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -13,6 +13,7 @@ module.exports = {
 
     devServer: {
         historyApiFallback: true,
+        hot: true,
         hotOnly: true,
         port: 3000,
     },
@@ -21,6 +22,12 @@ module.exports = {
         'react': 'React',
         'react-dom': 'ReactDOM',
     },
+
+    resolve: {
+        alias: {
+          'react-dom': '@hot-loader/react-dom',
+        },
+      },
     
     module: {
         // noParse: [

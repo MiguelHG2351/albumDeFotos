@@ -1,14 +1,14 @@
 import React from "react";
-import { Header } from '../styles/header'
+import { Header, MenuBtn } from '../styles/header'
 
 export default function fnHeader() {
     return (
         <Header>
-            <div className="menu-btn">
+            <MenuBtn>
                 <button>
                     <i className="material-icons">sort</i>
                 </button>
-            </div>
+            </MenuBtn>
             <h1>Albúm Familiar<br/>Familia Gaitan</h1>
         </Header>
     );

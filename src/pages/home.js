@@ -7,7 +7,6 @@ export default function Home() {
         <>
             <Header />
             <AllPhoto />
-            <h2>Hello World v:</h2>
         </>
     );
 }

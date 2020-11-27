@@ -1,16 +1,19 @@
 import React from 'react'
 import Card from './card'
 import json from '../data' //asserts { type: "json" }
+import Container from '../styles/allPhoto'
 
 export default function FnAllPhoto() {
     const data = JSON.parse(json)
     return (
-        <div>
+        <Container>
             {
-                data[0].map(function (data, index) {
-                    return <img src={data.image} style={{width: '250px'}} key={index} loading="lazy" alt=""/>
+                data[0].map(function (data) {
+                    return (
+                        <Card description={data.description} key={data.id} image={data.image} />
+                    )
                 })
             }
-        </div>
+        </Container>
     )
 }
