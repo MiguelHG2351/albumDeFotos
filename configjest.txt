@@ -1,0 +1,12 @@
+Configure Jest in your package.json file using the moduleNameMapper property.
+
+https://jestjs.io/docs/en/configuration.html#modulenamemapper-object-string-string
+
+"jest": {
+  "moduleNameMapper": {
+    "^Config(.*)$": "<rootDir>/src/config$1",
+    "^Components(.*)$": "<rootDir>/src/components$1",
+    "^Ducks(.*)$": "<rootDir>/src/ducks$1",
+    "^Shared(.*)$": "<rootDir>/src/shared$1",
+    "^App(.*)$": "<rootDir>/src$1"
+}

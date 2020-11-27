@@ -1,4 +1,4 @@
-[
+export default JSON.stringify([
     [
         {
             "image": "https://miguelhg2351.github.io/albumDeFotos/public/static/images/1.png",
@@ -518,4 +518,4 @@
             "description": "Promoción de Otoniel Vallecillo"
         }
     ]
-]
+])
