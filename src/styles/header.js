@@ -43,6 +43,9 @@ export const Sidenav = styled.div`
 `
 
 export const HeaderSidenav = styled.div`
+    & img {
+        width: 100%;
+    }
 `
 
 export const ContentSidenav = styled.section`
