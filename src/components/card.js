@@ -42,16 +42,16 @@ export default function FnCard({ image, downloadImg, description }) {
         let platform = window.navigator.platform 
         let files = shareFile()
 
-        if(platform == 'iphone' || platform == 'Linux armv71') {
-            debugger
-                window.navigator.canShare({files: files})
-                window.navigator.share({
+        if('share' in window.navigator && 'canShare' in window.navigator) {
+            window.navigator.canShare({files: files})
+            window.navigator.share({
                 title: 'Album Familiar',
                 url: downloadImg,
                 text: description,
                 files: files
             }).catch(err => console.log(`error ${err}`))
         }
+
     }
 
     return (
