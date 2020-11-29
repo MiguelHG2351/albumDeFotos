@@ -28,14 +28,30 @@ const DescriptionCard = styled.div`
 
 export default function FnCard({ image, downloadImg, description }) {
 
+    async function shareFile() {
+        const request = await fetch(image)
+        const response = request.blob()
+        const file = new File([response], 'family.png', {
+            type: 'image/png'
+        })
+        const fileArray = [file]
+        return fileArray
+    }
+
     function share_image() {
         let platform = window.navigator.platform 
-        if(platform !== 'Win32' || platform !== 'Win64')
-            window.navigator.share({
-            title: description,
-            url: downloadImg,
+        let files = shareFile()
 
-        })
+        if(platform == 'iphone' || platform == 'Linux armv71') {
+            debugger
+                window.navigator.canShare({files: files})
+                window.navigator.share({
+                title: 'Album Familiar',
+                url: downloadImg,
+                text: description,
+                files: files
+            }).catch(err => console.log(`error ${err}`))
+        }
     }
 
     return (
