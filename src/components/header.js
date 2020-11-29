@@ -1,12 +1,23 @@
-import React from "react";
+import * as React from "react";
 import { Link } from 'react-router-dom'
-import { Header, MenuBtn, Sidenav, HeaderSidenav, ContentSidenav } from '../styles/header'
+import { Header, MenuBtn, Sidenav, HeaderSidenav, ContentSidenav, Overlay } from '../styles/header'
 import img from '../../public/static/images/album2.png'
 
-export default function fnHeader() {
+export default function FnHeader() {
+
+    const { useState } = React
+
+    const [menu, setMenu] = useState(0)
+
+    function toogleMenu() {
+        if(menu) setMenu(0)
+        else setMenu('active')
+
+    }
+
     return (
         <Header>
-            <Sidenav>
+            <Sidenav className={menu}>
                 <HeaderSidenav>
                     <img src={img} alt="Nose v:"/>
                 </HeaderSidenav>
@@ -40,11 +51,12 @@ export default function fnHeader() {
                 </ContentSidenav>
             </Sidenav>
             <MenuBtn>
-                <button>
+                <button onClick={toogleMenu}>
                     <i className="material-icons">sort</i>
                 </button>
             </MenuBtn>
             <h1>Albúm Familiar<br/>Familia Gaitan</h1>
+            <Overlay className={menu} onClick={toogleMenu} />
         </Header>
     );
 }

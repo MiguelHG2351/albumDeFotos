@@ -13,7 +13,7 @@ const Card = styled.div`
     }
 `;
 
-export default function FnCard({ image, description }) {
+export default function FnCard({ image, downloadImg, description }) {
     return (
         <>
             <Card>
@@ -24,7 +24,10 @@ export default function FnCard({ image, description }) {
                         alt={description}
                     />
                 </div>
-                <div className="description-card"></div>
+                <div className="description-card">
+                    <a href={downloadImg} download id={description} ><i className="material-icons">cloud_download</i></a>
+                    <a href={downloadImg} download id={description} ><i className="material-icons">share</i></a>
+                </div>
                 <div className="footer-card"></div>
             </Card>
         </>

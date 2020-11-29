@@ -10,7 +10,7 @@ export default function FnAllPhoto() {
             {
                 data[0].map(function (data) {
                     return (
-                        <Card description={data.description} key={data.id} image={data.image} />
+                        <Card description={data.description} key={data.id} image={data.image} downloadImg={data.download} />
                     )
                 })
             }

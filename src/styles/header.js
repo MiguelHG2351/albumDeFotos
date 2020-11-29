@@ -40,6 +40,14 @@ export const Sidenav = styled.div`
     color: #fff;
     background:url('https://www.gstatic.com/mobilesdk/190424_mobilesdk/nav_nachos@2x.png') no-repeat #051e34;
     background-size: cover;
+    z-index: 5;
+    transform: translateX(-2500px);
+    transition: all ease 0.3s;
+    &.active {
+        display: block;
+        transform: translateX(0);
+    }
+    
 `
 
 export const HeaderSidenav = styled.div`
@@ -72,5 +80,18 @@ export const ContentSidenav = styled.section`
         & li:hover {
             background: rgb(7 142 188 / 46%);
         }
+    }
+`
+export const Overlay = styled.div`
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.72);
+    z-index: 4;
+    &.active {
+        display: block;
     }
 `
