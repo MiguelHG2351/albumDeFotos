@@ -38,10 +38,9 @@ export default function FnCard({ image, downloadImg, description }) {
         return fileArray
     }
 
-    function share_image() {
-        let platform = window.navigator.platform 
-        let files = shareFile()
-
+    async function share_image() {
+        let files = await shareFile()
+        debugger
         if('share' in window.navigator && 'canShare' in window.navigator) {
             window.navigator.canShare({files: files})
             window.navigator.share({
