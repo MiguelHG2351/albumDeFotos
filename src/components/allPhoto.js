@@ -8,7 +8,7 @@ export default function FnAllPhoto() {
     return (
         <Container>
             {
-                data[0].map(function (data) {
+                data[0].filter((_, index) => index <=5).map(function (data) {
                     return (
                         <Card description={data.description} key={data.id} image={data.image} downloadImg={data.download} />
                     )
