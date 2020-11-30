@@ -492,14 +492,6 @@ export default JSON.stringify([
             "id": 61
         },
         {
-            "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/webp/62.webp",
-            "download":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/62.png",
-            "author":"Walter Solorzano",
-            "fecha":"april 11, 2020",
-            "description": "Bryan Solorzano",
-            "id": 62
-        },
-        {
             "image":"https://miguelhg2351.github.io/albumDeFotos/public/static/webp/63.webp",
             "download":"https://miguelhg2351.github.io/albumDeFotos/public/static/images/63.png",
             "author":"Walter Solorzano",

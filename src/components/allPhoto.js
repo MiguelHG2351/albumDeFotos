@@ -1,6 +1,6 @@
-import Card from './card'
-import json from '../data' //asserts { type: "json" }
 import Container from './styles/allPhoto'
+import Card from './card'
+import json from '../data2' //asserts { type: "json" }
 
 export default function FnAllPhoto() {
     const data = JSON.parse(json)

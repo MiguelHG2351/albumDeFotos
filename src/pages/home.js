@@ -4,7 +4,7 @@ import AllPhoto from '../components/allPhoto'
 export default function Home() {
     return (
         <>
-            <ContainerHome>
+            <ContainerHome className="container-global">
                 <AllPhoto />
             </ContainerHome>
         </>

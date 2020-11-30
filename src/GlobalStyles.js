@@ -19,5 +19,19 @@ const GlobalStyle = createGlobalStyle`
         
     }
 
+    .container-global {
+        margin: 32px auto;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+    .container-global {
+        margin: 32px 0 0 auto;
+        width: 82%;
+
+    }
+
+}
+
 `
 export default GlobalStyle

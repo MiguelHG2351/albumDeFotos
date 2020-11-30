@@ -9,8 +9,11 @@ export default function FnHeader() {
     const [menu, setMenu] = useState(0)
 
     function toogleMenu() {
-        if(menu) setMenu(0)
-        else setMenu('active')
+        if(window.matchMedia('(max-width: 1200px)').matches) {
+            if(menu) setMenu(0)
+            else setMenu('active')
+            
+        }
 
     }
 
