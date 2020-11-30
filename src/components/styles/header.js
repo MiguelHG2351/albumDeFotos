@@ -22,6 +22,8 @@ export const Header = styled.header`
         font-weight: 400;
         font-size: 16px;
         text-align: center;
+        cursor: pointer;
+        user-select: none;
     }
     .menu-btn {
     }
@@ -39,20 +41,20 @@ export const Sidenav = styled.div`
     z-index: 5;
     transform: translateX(-2500px);
     transition: all ease 0.3s;
+    overflow-y: auto;
     &.active {
         display: block;
         transform: translateX(0);
-        overflow-y: auto;
     }
 
     &::-webkit-scrollbar {
-        background: yellow;
-        width: 12px;
+        display: none;
+       
     }
 
-    &::-webkit-scrollbar-thumb {
-        background: red;
-
+    @media screen and (min-width: 1200px) {
+        width: 18%;
+        transform: translateX(0);
     }
     
 `

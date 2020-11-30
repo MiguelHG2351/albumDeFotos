@@ -1,12 +1,10 @@
 import styled from 'styled-components'
 
-export default styled.section`
-    margin: 32px auto;
-    
+export default styled.section`    
     @media screen and (min-width: 1200px) {
-        width: 90%;
         column-count: 4;
         column-gap: 10px;
+
     }
     /* display: grid;
     justify-items: center;
