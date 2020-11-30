@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export default styled.div`
     position: relative;
-    border: 1px solid #000;
     margin-bottom: 10px;
     overflow: hidden;
     & .header-card {
@@ -25,7 +24,6 @@ export default styled.div`
 export const DescriptionCard = styled.div`
     --padding: 12px;
     padding: var(--padding);
-    border: 1px solid #fff;
     background-color: #09f;
     display: flex;
     justify-content: space-evenly;
