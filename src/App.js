@@ -1,5 +1,6 @@
 import { hot } from 'react-hot-loader/root';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
 import Header from './components/header'
 import Home from './pages/home'
 import All from './pages/all'
