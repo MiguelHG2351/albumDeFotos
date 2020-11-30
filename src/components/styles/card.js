@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export default styled.div`
-    border: 1px solid red;
     position: relative;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    overflow: hidden;
     & .header-card {
         & img {
             width: 100%;
@@ -15,18 +17,22 @@ export default styled.div`
         display: grid;
         grid-template-rows: 1fr auto;
         break-inside: avoid;
-        margin-bottom: 10px;
     }
 
 `;
 
 
 export const DescriptionCard = styled.div`
-    padding: 12px;
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    right: 0;
+    --padding: 12px;
+    padding: var(--padding);
+    border: 1px solid #fff;
+    background-color: #09f;
+    display: flex;
+    justify-content: space-evenly;
+
+    & button {
+        color: #fff;
+    }
     & a {
         color: #fff;
     }

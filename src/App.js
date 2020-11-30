@@ -1,5 +1,4 @@
 import { hot } from 'react-hot-loader/root';
-import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from './components/header'
 import Home from './pages/home'

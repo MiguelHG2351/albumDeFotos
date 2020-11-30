@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export default styled.section`
-    width: 90%;
     margin: 32px auto;
+    
     @media screen and (min-width: 1200px) {
+        width: 90%;
         column-count: 4;
         column-gap: 10px;
     }

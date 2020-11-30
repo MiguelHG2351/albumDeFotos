@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Link } from 'react-router-dom'
 import { Header, MenuBtn, Sidenav, HeaderSidenav, ContentSidenav, Overlay } from './styles/header'
 import img from '../../public/static/images/album2.png'
@@ -24,7 +23,7 @@ export default function FnHeader() {
                 <ContentSidenav>
                     <ul>
                         <li>
-                            <Link to="/">
+                            <Link to="/" onClick={toogleMenu}>
                                 <i className="material-icons" onClick={toogleMenu}>home</i>
                                 Home
                             </Link>

@@ -1,4 +1,3 @@
-import React from 'react'
 import Card from './card'
 import json from '../data' //asserts { type: "json" }
 import Container from './styles/allPhoto'

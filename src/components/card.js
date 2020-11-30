@@ -45,7 +45,7 @@ export default function FnCard({ image, downloadImg, description }) {
                 </div>
                 <DescriptionCard>
                     <a href={downloadImg} type="image/png" title="images_download" rel="noopener noreferrer" id={description} download={description}><i className="material-icons">cloud_download</i></a>
-                    <button className="btn" onClick={share_image}><i className="material-icons">share</i></button>
+                    <button className="btn transparent" onClick={share_image}><i className="material-icons">share</i></button>
                 </DescriptionCard>
                 <div className="footer-card"></div>
             </Card>
