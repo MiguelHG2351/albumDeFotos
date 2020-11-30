@@ -1,15 +1,21 @@
 import { hot } from 'react-hot-loader/root';
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Header from './components/header'
 import Home from './pages/home'
+import Videos from './pages/videos'
+import NotFound from './pages/NotFound'
 import GlobalStyles from './GlobalStyles'
 
 function App() {
     return (
         <Router>
             <GlobalStyles />            
+            <Header />
             <Switch>
-                <Route path="/" component={Home} />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/videos" component={Videos} />
+                <Route component={NotFound} />
             </Switch>
         </Router>
     )

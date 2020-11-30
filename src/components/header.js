@@ -25,30 +25,30 @@ export default function FnHeader() {
                     <ul>
                         <li>
                             <Link to="/">
-                                <i className="material-icons">home</i>
+                                <i className="material-icons" onClick={toogleMenu}>home</i>
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link to="/all">
+                            <Link to="/all" onClick={toogleMenu}>
                                 <i className="material-icons">sort</i>
                                 Todas
                             </Link>
                         </li>
                         <li>
-                            <Link to="/abuela">
+                            <Link to="/abuela" onClick={toogleMenu}>
                                 <i className="material-icons">check_box</i>
                                 Abuela
                             </Link>
                         </li>
                         <li>
-                            <Link to="/family">
+                            <Link to="/family" onClick={toogleMenu}>
                                 <i className="material-icons">check_box</i>
                                 Familiares
                             </Link>
                         </li>
                         <li>
-                            <Link to="/videos">
+                            <Link to="/videos" onClick={toogleMenu}>
                                 <i className="material-icons">check_box</i>
                                 Videos
                             </Link>
