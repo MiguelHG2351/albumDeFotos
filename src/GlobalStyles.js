@@ -6,5 +6,18 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         box-sizing: border-box;
     }
+
+    .btn {
+        border: none;
+        outline: none;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .transparent {
+        background-color: transparent;
+        
+    }
+
 `
 export default GlobalStyle

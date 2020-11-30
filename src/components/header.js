@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from 'react-router-dom'
-import { Header, MenuBtn, Sidenav, HeaderSidenav, ContentSidenav, Overlay } from '../styles/header'
+import { Header, MenuBtn, Sidenav, HeaderSidenav, ContentSidenav, Overlay } from './styles/header'
 import img from '../../public/static/images/album2.png'
 
 export default function FnHeader() {
@@ -36,22 +36,28 @@ export default function FnHeader() {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/">
+                            <Link to="/abuela">
                                 <i className="material-icons">check_box</i>
                                 Abuela
                             </Link>
                         </li>
                         <li>
-                            <Link to="/">
+                            <Link to="/family">
                                 <i className="material-icons">check_box</i>
                                 Familiares
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/videos">
+                                <i className="material-icons">check_box</i>
+                                Videos
                             </Link>
                         </li>
                     </ul>
                 </ContentSidenav>
             </Sidenav>
             <MenuBtn>
-                <button onClick={toogleMenu}>
+                <button className="btn" onClick={toogleMenu}>
                     <i className="material-icons">sort</i>
                 </button>
             </MenuBtn>

@@ -4,12 +4,8 @@ export const MenuBtn = styled.div`
     display: flex;
     align-items: center;
     & button {
-        border: none;
         background-color: transparent;
         color: #fff;
-        outline: none;
-        user-select: none;
-        cursor: pointer;
         & i {
             font-size: 32px;
         }
@@ -46,6 +42,17 @@ export const Sidenav = styled.div`
     &.active {
         display: block;
         transform: translateX(0);
+        overflow-y: auto;
+    }
+
+    &::-webkit-scrollbar {
+        background: yellow;
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: red;
+
     }
     
 `
@@ -53,6 +60,7 @@ export const Sidenav = styled.div`
 export const HeaderSidenav = styled.div`
     & img {
         width: 100%;
+
     }
 `
 

@@ -1,30 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+import Card, { DescriptionCard } from './styles/card'
 
-const Card = styled.div`
-    margin-top: 25px;
-    border: 1px solid red;
-    position: relative;
-    & .header-card {
-        & img {
-            max-width: 100%;
-            object-fit: cover;
-            vertical-align: middle;
-        }
-    }
-`;
-
-
-const DescriptionCard = styled.div`
-    padding: 12px;
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    right: 0;
-    & a {
-        color: #fff;
-    }
-`
+/** 
+ * @param {string} images
+ * @param {string} downloadImg
+ * @param {string} description */
 
 export default function FnCard({ image, downloadImg, description }) {
 
@@ -40,7 +20,7 @@ export default function FnCard({ image, downloadImg, description }) {
 
     async function share_image() {
         let files = await shareFile()
-        debugger
+        
         if('share' in window.navigator && 'canShare' in window.navigator) {
             window.navigator.canShare({files: files})
             window.navigator.share({
@@ -65,7 +45,7 @@ export default function FnCard({ image, downloadImg, description }) {
                 </div>
                 <DescriptionCard>
                     <a href={downloadImg} type="image/png" title="images_download" rel="noopener noreferrer" id={description} download={description}><i className="material-icons">cloud_download</i></a>
-                    <button onClick={share_image}><i className="material-icons">share</i></button>
+                    <button className="btn" onClick={share_image}><i className="material-icons">share</i></button>
                 </DescriptionCard>
                 <div className="footer-card"></div>
             </Card>
