@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Sitio web para subir videos e imagenes familiares. Album" />
+    <meta name="theme-color" content="#3138d1">
+    <meta name="og:url" content="https://miguelhg2351.github.io/albumDeFotos/public/" />
+    <meta name="og:image" content="https://as01.epimg.net/betech/imagenes/2018/09/04/portada/1536088061_940943_1536095393_noticia_normal.jpg" />
+    <meta name="og:title" content="Album familiar" />
+    <meta name="og:type" content="website" />
+    <meta name="og:description" content="Album familiar 2.0" />
+    <title>Albúm</title>
+    <link rel="apple-touch-icon" sizes="144x144" href="static/images/Sin título.png">
+    <!-- iPhone con pantalla de alta resolución: -->
+    <link rel="apple-touch-icon" sizes="114x114" href="static/images/Sin título.png">
+    <!-- iPad de primera y segunda generación: -->
+    <link rel="apple-touch-icon" sizes="72x72" href="static/images/Sin título.png">
+    <!-- Dispositivos iPhone sin pantalla Retina, iPod Touch y Android 2.1+: -->
+    <link rel="apple-touch-icon" href="static/images/Sin título.png">
+    <!-- favicono básico -->
+    <link rel="icon" href="static/images/Sin título.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+    
+  <!-- Encabezado del sitio -->
+
+  <header class="header-site">
+    <nav class="transparent row">
+      <button class="waves-effect waves-light sidenav-trigger col s4 m1 btn-menu" data-target="slide-out"><i class="material-icons">menu</i></button>
+      <ul class="col s10 list-nav">
+        <li><a rel="noopener noreferrer" href="#familía">Familía</a></li>
+        <li><a rel="noopener noreferrer" href="#mama">Mamá</a></li>
+        <li><a rel="noopener noreferrer" href="otros">Otros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Boton flotante de menu en mobiles -->
+  <a rel="noopener noreferrer" class="hide-on-med-and-up btn-floating btn-large waves-effect waves-light blue sidenav-trigger btn-menu-mobile" data-target="slide-out"><i class="material-icons">menu</i></a>
+
+      <!--Presentación del sitio-->
+      
+      <div class="header-wrapper z-depht-3">
+        <div>
+          <header class="header-intro">
+            <h4>Guarda recuerdos de tus familiares</h4>
+            <h3>Y SERES QUERIDOS</h3>
+            <p>Puedes guardar tus fotos y dar acceso a otros usuarios</p>
+          </header>
+        </div>
+      </div>
+      
+      <!--Sección de fotos || se renderizan en JavaScript || Los datos estan guardados en una base de datos o localstorage-->
+      
+      <section class="z-depht-3"> 
+        <section id="card-container" class="row">
+
+        </section>
+        <section id="card-container-family center" class="row">
+          <h4>Categoría: Otros</h4>
+          <i class="material-icons">keyboard_arrow_right</i>
+        </section>
+        <section id="card-container-others" class="row">
+
+        </section>
+        <!-- https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg -->
+    </section>
+
+    <!-- Sección de videos del sitio -->
+
+    <section class="section videos-container">
+      <header class="section center header-videos"> <!-- Introducción a la sección de videos -->
+        <h3 class="section">Publica tus videos aquí</h3>
+        <p class="section">No solo fotos. Sube también tus videos aquí</p>
+      </header>
+      <div class="video" id="video">
+        <!--El primer video es el más importante en el sitio-->
+        <iframe title="Video de youtube donde aparece la familia" width="560" height="315" src="https://www.youtube.com/embed/jKNMNtW8Sow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <form class="row section form-video" id="form-video" action="#">
+          <input class="col s6" type="text" name="url" placeholder="Ingresa una url" />
+          <input class="col s6" type="file" name="url" value="Ingresa el video" accept="video/*" />
+        </form>
+      </div>
+    </section>
+
+      <!-- Área de templates que se visualizan con interactividad con el usuario KEYWORD= JAVASCRIPT, DESPLEGABLE, SIDENAV,  -->
+      
+    <!-- Sidenav || menu para moviles || menu desplegable || menu vértical -->
+
+      <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img alt="foto de presentación" src="https://image.freepik.com/psd-gratis/diseno-fondo-abstracto_1297-78.jpg">
+        </div>
+        <a rel="noopener noreferrer" href="#user"><img alt="fondo de la cuenta" class="circle" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c0.5.160.160a/p160x160/91087295_526034654959334_4853660730672545792_n.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=w6lGlFwVbGwAX9lO5I6&_nc_ht=scontent.fmga3-2.fna&oh=9a5cc7cf5f51cc3681da339788bd458a&oe=5EAC49D3"></a>
+        <a rel="noopener noreferrer" href="#name"><span class="white-text name">Franchesca GABY :V</span></a>
+        <a rel="noopener noreferrer" href="#email"><span class="white-text email">gaby1431@gmail.com</span></a>
+      </div></li>
+      <li><a rel="noopener noreferrer" href="#!"><i class="material-icons">cloud</i>Nube en Google fotos</a></li>
+      <li><a rel="noopener noreferrer" href="#!">Mis proyectos</a></li>
+      <li><div class="divider"></div></li>
+      <li><a rel="noopener noreferrer" class="subheader">Categorías</a></li>
+      <li><a rel="noopener noreferrer" class="waves-effect" href="#family">familia</a></li>
+      <li><a rel="noopener noreferrer" class="waves-effect" href="#mom">Mamá</a></li>
+      <li><a rel="noopener noreferrer" class="waves-effect" href="#others">otros</a></li>
+    </ul>
+    
+    
+    <!-- Boton flotante || botón de opciones -->
+    
+    <div class="fixed-action-btn">
+      <a rel="noopener noreferrer" class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a rel="noopener noreferrer" class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a rel="noopener noreferrer" class="btn-floating yellow darken-1" href="mailto:miguelhernandezgaitan13@gmail.com" ><i class="material-icons">format_quote</i></a></li>
+      <li><a rel="noopener noreferrer" target="_blank" href="https://mega.nz/folder/zP5GWApQ#OdsXc4OwzZNL55AG7pfgzQ" class="btn-floating green"><i class="material-icons">file_download</i></a></li>
+      <li><a rel="noopener noreferrer" class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a rel="noopener noreferrer" href="#!">one</a></li>
+    <li><a rel="noopener noreferrer" href="#!">two</a></li>
+    <li><a rel="noopener noreferrer" href="#!">three</a></li>
+    <li><a rel="noopener noreferrer" href="#!"><i class="material-icons">view_module</i>Apps</a></li>
+    <li><a rel="noopener noreferrer" href="#!"><i class="material-icons">cloud</i>Nube</a></li>
+  </ul>
+
+    <!-- Compiled and minified JavaScript -->
+    <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+</body>
+</html>
